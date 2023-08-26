@@ -1,5 +1,9 @@
-A turma está aprendendo a usar o Git
 
----
+Lista de Funcionalidades
 
-A turma está conseguindo usar o Git
+-pagina principal 
+-menu/nav bar 
+-tela de login
+-tela descrição/informação
+-carrinho de compra
+  
