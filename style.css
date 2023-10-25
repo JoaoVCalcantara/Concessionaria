@@ -1,7 +1,16 @@
-{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: #9d97a4;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 p {
@@ -14,11 +23,16 @@ nav {
     display: inline-flex;
     font-family: 'Poppins', sans-serif;
     margin-top: 20px;
-    align-items:center;
-    color:  #202020;
+    align-items: center;
+    color: #202020;
     position: absolute;
     width: 100%;
     justify-content: space-around;
+    font-weight: 500;
+}
+
+.logo {
+    font-size: 40px;
 }
 
 .right-icons {
@@ -30,6 +44,9 @@ nav {
     list-style: none;
     display: flex;
     align-items: center;
+    font-weight: 500;
+    justify-content: center;
+    font-size: 17px;
 }
 
 .nav-itens>li>a {
@@ -48,6 +65,7 @@ nav {
     align-items: center;
     justify-content: center;
     background-color: transparent;
+    padding-right: 5px;
 }
 
 .globe-icon {
@@ -58,6 +76,7 @@ nav {
     align-items: center;
     justify-content: center;
     background-color: transparent;
+    padding-right: 5px;
 }
 
 .settings-icon {
@@ -68,6 +87,7 @@ nav {
     align-items: center;
     justify-content: center;
     background-color: transparent;
+    padding-right: 5px;
 }
 
 img {
@@ -79,12 +99,10 @@ img {
     object-position: center;
 }
 
-
 .carro1 {
     max-width: 100%;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-
     object-fit: cover;
     background-size: cover;
     background-repeat: none;
@@ -118,6 +136,11 @@ img {
     font-family: 'Poppins', sans-serif;
 }
 
+.botao-imagem:hover {
+    background-color: grey;
+    color: #fff;
+    transition: 1s;
+}
 
 @media screen and (max-width: 768px) {
     nav{
@@ -127,8 +150,8 @@ img {
 }
 
 footer {
-    background-color: #202020;
-    height: 300px;
+    background-color: #9d97a4;
+    margin-top: 2rem;
 }
 
 .secoes {
@@ -139,22 +162,77 @@ footer {
 .informacoes {
     display: flex;
     margin-left: 100px;
-
+    list-style: none;
+    font-weight: 400;
 }
 
-.info1, .info2, .info3 {
+.info1,
+.info2,
+.info3 {
     padding-top: 50px;
     padding-right: 50px;
     padding-left: 50px;
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    color: rgb(199, 199, 199);
+    color: rgb(228, 225, 225);
     margin-left: 50px;
-
 }
 
-.info1>h1, .info2>h1, .info3>h1 {
-    color: rgb(252, 252, 252);
+.info1>h1,
+.info2>h1,
+.info3>h1 {
+    color: rgb(255, 255, 255);
+}
+
+.empresa {
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    padding-left: 50px;
+    font-size: 30px;
+}
+
+.contato {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -10px;
+}
+
+.links {
+    display: flex;
+}
+
+.links>li {
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+}
+
+.link1 {
+    margin-right: 20px;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    transition: 1s text;
+}
+
+.link1:hover,
+.link2:hover,
+.link3:hover {
+    color: rgb(188, 188, 188);
+    transition: 1s;
+}
+
+.creditos {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    padding-left: 350px;
+}
+
+.redes-sociais {
+    color: white;
+    font-size: 30px;
+    align-items: flex;
+    margin-top: 20px;
 }
 
 .card {
@@ -186,60 +264,6 @@ footer {
     outline: none;
 }
 
-.divisao {
-    margin-top: 80px;
-}
-
-.empresa {
-    margin-top: 40px;
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
-    padding-left: 50px;
-    font-size: 30px;
-}
-
-.contato {
-    display: flex;
-    justify-content: space-around;
-}
-
-.links {
-    display: flex;
-}
-
-.links>li {
-    list-style: none;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 40px;
-}
-
-.link1 {
-    margin-right: 20px;
-    font-size: 17px;
-    color: #fff;
-    text-decoration: none;
-    transition: 1s text;
-
-}
-
-.link1:hover, .link2:hover, .link3:hover {
-    color: rgb(188, 188, 188);
-    transition: 1s;
-}
-
-.creditos {
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
-    padding-left: 350px;
-}
-
-.redes-sociais{
-    color: white;
-
-    align-items: flex;
-    margin-top: 20px;
-}
-
-.creditos{
-    margin-top: 15px;
+.botao-imagem>a {
+    color: black;
 }
