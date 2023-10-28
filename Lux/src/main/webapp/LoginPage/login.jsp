@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criar Conta</title>
 
-    <link rel="stylesheet" href="Estilo.css">
+    <link rel="stylesheet" href="/LoginPage/Estilo.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel='stylesheet'>
     
 </head>
@@ -14,19 +14,20 @@
         <div class="form login">
             <div class="form-content">
                 <header>Login</header>
-                <form action="#">
+                <form action="/login" method = "post">
+                    <h5>${requestScope.message}</h5>
                     <div class="field input-field">
-                        <input type="email" placeholder="Email" class="input">
+                        <input type="email" class="input" name="username" placeholder="Email" required>
                     </div>
                     <div class="field input-field">
-                        <input type="password" placeholder="Senha" class="password">
+                        <input type="password"  class="password" name="password"  placeholder="Senha" required>
                         <i class="bx bx-hide eye-icon" ></i>
                     </div>
                     <div class="form-link">
                         <a href="#" class="forgot-pass">Esqueceu sua Senha ?</a>
                     </div>
                     <div class="field button-field">
-                        <button>Login</button>
+                        <button type="submit">Login</button>
                     </div>
                 </form>
                 <div class="form-link">
