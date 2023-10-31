@@ -20,7 +20,7 @@
                 <ul class="nav-itens">
                     <li><a href="../index.jsp">Home</a></li>
                     <li><a href="../História/historia.html">Sobre</a></li>
-                    <li><a href="../Modelos/ofertas.html">Veiculos</a></li>
+                    <li><a href="../Modelos/ofertas.jsp">Veiculos</a></li>
                     <li><a href="#">Suporte</a></li>
                 </ul>
             </div>
@@ -98,8 +98,19 @@
                             <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2800,c_fit,f_auto,q_auto:best/Model-S-Performance-Hero-Desktop-LHD" alt="Tesla Model S">
                         </div>
                     </div>
-                    <button class="btn2"><a href="#">Valor do Aluguel: 
-                        R$5000,00</button></a>
+                    <div class="toast">
+                        <div class="toast-content">
+                            <i class="fas fa-solid fa-check check"></i>
+                            <div class="message">
+                                <span class="text text-1">Parabéns!!</span>
+                                <span class="text text-2">Carro Alugado com sucesso, entraremos em contato via e-mail dentro dos
+                                    próximos dias.</span>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-xmark close"></i>
+                        <div class="progress active"></div>
+                    </div>
+                    <button onclick="showToast()">Alugar!</button>
               </div>
         </div>
             <footer>
@@ -109,7 +120,7 @@
                             <li><a class="link1" href="../index.jsp">Home</a></li>
                         </div>
                         <div class="info2">
-                            <li><a class="link1" href="../Modelos/ofertas.html">Veiculos</a></li>
+                            <li><a class="link1" href="../Modelos/ofertas.jsp">Veiculos</a></li>
                         </div>
                         <div class="info3">
                             <li><a class="link1" href="../História/historia.html">Sobre</a></li>
@@ -137,5 +148,5 @@
             </footer>
         </div>
 </body>
-
+<script src="script.js"></script>
 </html>

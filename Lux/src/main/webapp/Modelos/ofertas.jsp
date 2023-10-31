@@ -47,14 +47,15 @@
     </div>
   </section>
   <h2 class="models">Modelos</h2>
-  <div class="container">
+  <c:forEach var="car" items="${cars}">
+    <div class="container">
     <div class="article-card">
       <div class="content">
-        <p class="date"><a href="../Carros/TeslaModelS.html" class="click">Tesla Model S</p>
+        <p class="date"><a href="../Carros/TeslaModelS.html" class="click">${carros.name}</p>
         <p class="title">Tesla Model S</p>
       </div>
       <img
-        src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Performance-Hero-Desktop-LHD.jpg"
+        src=""
         alt="Tesla Model S" class="card-image zoomable" /></a>
     </div>
     <div class="article-card">
@@ -67,46 +68,8 @@
         alt="Tesla Model X" class="card-image zoomable" /></a>
     </div>
   </div>
-  <div class="container2">
-    <div class="article-card">
-      <div class="content">
-        <p class="date"><a href="../Carros/Porsche.html" class="click">Porsche Taycan Turbo S</p>
-        <p class="title">Esportivo Elétrico.</p>
-      </div>
-      <img
-        src="https://images.unsplash.com/photo-1570432215913-b66fff4a50a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80"
-        alt="article-cover" class="card-image zoomable" /></a>
-    </div>
-    <div class="article-card">
-      <div class="content">
-        <p class="date"><a href="../Carros/Bmw.html" class="click">Bmw i8</p>
-        <p class="title">Tecnologia Alemã.</p>
-      </div>
-      <img
-        src="https://images.unsplash.com/photo-1619695346043-f4f91e3b4edc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
-        alt="article-cover" class="card-image zoomable" /></a>
-    </div>
-  </div>
-  <div class="container3">
-    <div class="article-card">
-      <div class="content">
-        <p class="date"><a href="../Carros/BYDYuan.html" class="click">Byd Yuan Plus</p>
-        <p class="title">O SUV Chinês Elétrico</p>
-      </div>
-      <img src="https://www.byd.com/content/dam/byd-site/br/product/yuan-plus-ev-br/F01-2%20copy.jpg"
-        alt="article-cover" class="card-image zoomable" /></a>
-    </div>
+  </c:forEach>
 
-    <div class="article-card">
-      <div class="content">
-        <p class="date"><a href="../Carros/BYDTan.html" class="click">BYD Tan EV</p>
-        <p class="title">O Suv Elétrico de 7 Lugares.</p>
-      </div>
-      <img
-        src="https://static.wixstatic.com/media/0618bc_ddbb4d42444a4b74b2e84296718aa6e9~mv2.jpg/v1/fill/w_1864,h_1065,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/0618bc_ddbb4d42444a4b74b2e84296718aa6e9~mv2.jpg"
-        alt="article-cover" class="card-image zoomable" /></a>
-    </div>
-  </div>
   <footer>
     <div class="secoes">
       <section class="informacoes">
@@ -117,7 +80,7 @@
           <li><a class="link1" href="#">Veiculos</a></li>
         </div>
         <div class="info3">
-          <li><a class="link1" href="../História/historia.html">Sobre</a></li>
+          <li><a class="link1" href="/Historia/historia.html">Sobre</a></li>
         </div>
       </section>
       <hr class="divisao">
