@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet({"/find-all-cars", "/admin/find-all-cars"})
+@WebServlet("/find-all-cars")
 public class ListCarServlet extends HttpServlet {
 
     @Override
@@ -21,8 +21,9 @@ public class ListCarServlet extends HttpServlet {
 
         req.setAttribute("cars", cars);
 
-        req.getRequestDispatcher("dashboard.jsp").forward(req, resp);
+        req.getRequestDispatcher("/Modelos/ofertas.jsp").forward(req, resp);
 
     }
 
 }
+

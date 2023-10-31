@@ -13,18 +13,18 @@
     <meta charset="UTF-8">
     <title>Dashboard</title>
 </head>
-<body>
-<div>
+    <body>
+        <div>
         <c:if test="${sessionScope.loggedUser != null}">
             <span>${sessionScope.loggedUser}</span>
             <a href="/logout">Logout</a>
         </c:if>
-    <h1>Cars</h1>
+        <h1>Cars</h1>
     <table>
     <tr>
         <th>ID</th>
         <th>Name</th>
-        <<c:if test="${sessionScope.loggedUser != null}">
+        <c:if test="${sessionScope.loggedUser != null}">
             <th>Action</th>
         </c:if>
     </tr>

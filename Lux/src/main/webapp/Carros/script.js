@@ -41,3 +41,4 @@ window.addEventListener('scroll', function () {
   var toast = document.querySelector('.toast');
   toast.style.bottom = '0';
 });
+

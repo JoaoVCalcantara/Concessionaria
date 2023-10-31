@@ -1,10 +1,13 @@
+
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="pt-br">
 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="models.css" />
+  <link rel="stylesheet" href="Modelos/models.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
@@ -46,29 +49,22 @@
       <img src="https://images2.alphacoders.com/115/1154167.jpg" alt="Tesla Model S">
     </div>
   </section>
+
   <h2 class="models">Modelos</h2>
-  <c:forEach var="car" items="${cars}">
+
     <div class="container">
-    <div class="article-card">
-      <div class="content">
-        <p class="date"><a href="../Carros/TeslaModelS.html" class="click">${carros.name}</p>
-        <p class="title">Tesla Model S</p>
-      </div>
-      <img
-        src=""
-        alt="Tesla Model S" class="card-image zoomable" /></a>
+      <c:forEach var="car" items="${cars}">
+        <div class="article-card">
+          <div class="content">
+            <p class="date"><a href="../Carros/${car.name}" class="click">${car.name}</p>
+            <p class="title">${car.title}</p>
+          </div>
+          <img
+            src="${car.link}"
+            alt="${car.name}" class="card-image zoomable"/></a>
+        </div>
+      </c:forEach>
     </div>
-    <div class="article-card">
-      <div class="content">
-        <p class="date"><a href="../Carros/TeslaModelX.html" class="click">Tesla Model X</p>
-        <p class="title">O esportivo elétrico.</p>
-      </div>
-      <img
-        src="https://images.unsplash.com/flagged/photo-1579782647395-2e6fb36a64f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2006&q=80"
-        alt="Tesla Model X" class="card-image zoomable" /></a>
-    </div>
-  </div>
-  </c:forEach>
 
   <footer>
     <div class="secoes">

@@ -39,17 +39,14 @@ public class LoginServlet extends HttpServlet {
         System.out.println(isValidUSer);
 
         if(isValidUSer) {
-
-
-            System.out.println("logado com sucesso");
+            req.setAttribute("message", "Logado com Sucesso!");
 
             req.getRequestDispatcher("index.jsp").forward(req, resp);
         }
         else
         {
-            System.out.println("credenciais invalidas");
 
-            req.setAttribute("message", "Invalid credentials!");
+            req.setAttribute("message", "Credenciais Inválidas!");
 
             req.getRequestDispatcher("index.jsp").forward(req, resp);
 

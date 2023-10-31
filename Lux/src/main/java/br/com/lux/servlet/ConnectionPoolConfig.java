@@ -9,6 +9,10 @@ public class ConnectionPoolConfig {
 
     private static BasicDataSource dataSource;
 
+    private ConnectionPoolConfig() {
+        getDataSource();
+    }
+
     private static BasicDataSource getDataSource() {
 
         if (dataSource == null) {
@@ -32,10 +36,6 @@ public class ConnectionPoolConfig {
 
         return getDataSource().getConnection();
 
-    }
-
-    private ConnectionPoolConfig() {
-        getDataSource();
     }
 
 }
