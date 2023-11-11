@@ -24,6 +24,10 @@
   
 ![Ref4](https://github.com/JoaoVCalcantara/Concessionaria/assets/127777836/2e47d283-1914-4d7c-bb40-f05067a334fb)
 
+* Referência 5
+  
+![Ref5]([https://github.com/JoaoVCalcantara/Concessionaria/assets/127777836/2e47d283-1914-4d7c-bb40-f05067a334fb](https://www.clickz.com/wp-content/uploads/2017/03/Breaking-news-web-push-notification-example.png))
+
 # Banco de Dados 
 
 ![DB](https://github.com/JoaoVCalcantara/Concessionaria/assets/127777836/73f09895-eb6c-4813-a0a6-5f5e446aa33f)
