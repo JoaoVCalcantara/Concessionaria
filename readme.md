@@ -4,7 +4,7 @@
 * Menu/Nav-Bar.
 * Tela de Login.
 * Tela de Descrição/Informação.
-* Carrinho de Compras.
+* Popup confirmando o aluguel do carro.
 
 
 # Referências 
