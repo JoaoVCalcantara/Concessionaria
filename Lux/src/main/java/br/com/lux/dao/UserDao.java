@@ -19,7 +19,7 @@ public class UserDao {
             preparedStatement.setString(1, user.getUsername());
             ResultSet resultSet = preparedStatement.executeQuery();
 
-            System.out.println("success in select username");
+            System.out.println("Sucesso em logar");
 
             while(resultSet.next()) {
                 String password = resultSet.getString("password");
