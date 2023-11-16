@@ -1,4 +1,16 @@
-package br.com.lux.filter;
+package br.com.lux.model;
+
+public class User {
+
+    private String username, password;
+
+    public User(String name, String password) {
+        this.username = name;
+        this.password = password;
+    }
+
+    public String getUsername() {
+        return username;package br.com.lux.filter;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
@@ -8,7 +20,6 @@ import java.io.IOException;
 
 @WebFilter("/admin/*")
 public class AutenticationFilter implements Filter {
-
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {}
@@ -22,7 +33,7 @@ public class AutenticationFilter implements Filter {
             chain.doFilter(servletRequest, response);
 
         } else {
-            servletRequest.setAttribute("message", "Usuário não autenticado");
+            servletRequest.setAttribute("message", "Usuário Não Autenticado");
             servletRequest.getRequestDispatcher("/login.jsp").forward(httpServletRequest, response);
         }
     }
@@ -32,5 +43,10 @@ public class AutenticationFilter implements Filter {
 
     private boolean isUSerLoggedOn(HttpServletRequest httpServletRequest) {
         return httpServletRequest.getSession().getAttribute("LoggedUser") != null;
+    }
+}
+    }
+    public String getPassword() {
+        return password;
     }
 }
