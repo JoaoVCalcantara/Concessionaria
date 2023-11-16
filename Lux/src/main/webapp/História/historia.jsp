@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,17 +9,16 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <title>Veículos</title>
+    <title>Historia</title>
 </head>
-
 <body>
     <nav>
         <p class="logo">LUX</p>
         <div class="links">
             <ul class="nav-itens">
-                <li><a href="../index.jsp">Home</a></li>
+                <li><a href="/index.jsp">Home</a></li>
                 <li><a href="#">Sobre</a></li>
-                <li><a href="../Modelos/ofertas.html">Veiculos</a></li>
+                <li><a href="/find-all-cars">Veiculos</a></li>
             </ul>
         </div>
         <div class="right-icons">
@@ -38,7 +36,7 @@
     </section>
 
     <div class="hist">
-        <h2 class="historia">Nossa História</h2>
+        <h2 class="historia">Nossa Historia</h2>
     </div>
 
     <div class="texto">
@@ -55,7 +53,6 @@
                 <input type="radio" name="slide" id="slide3">
                 <input type="radio" name="slide" id="slide4">
                 <input type="radio" name="slide" id="slide5">
-
                 <div class="slide s1">
                     <img src="https://images.unsplash.com/photo-1523214496-759e60a282d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
                         alt="São Paulo - São Paulo">
@@ -86,7 +83,6 @@
             </div>
         </div>
     </div>
-
     <footer>
         <div class="secoes">
             <section class="informacoes">
@@ -94,7 +90,7 @@
                     <li><a class="link1" href="../index.jsp">Home</a></li>
                 </div>
                 <div class="info2">
-                    <li><a class="link1" href="../Modelos/ofertas.html">Veiculos</a></li>
+                    <li><a class="link1" href="/find-all-cars">Veiculos</a></li>
                 </div>
                 <div class="info3">
                     <li><a class="link1" href="#">Sobre</a></li>
@@ -123,5 +119,4 @@
     </div>
     <script src="script.js"></script>
 </body>
-
 </html>
