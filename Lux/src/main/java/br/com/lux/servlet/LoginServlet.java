@@ -21,9 +21,6 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-        System.out.println("isValidUSer 1");
-
 //        req.getRequestDispatcher("LoginPage/login.jsp").forward(req, resp);
 
         String username = req.getParameter("username");
@@ -39,19 +36,14 @@ public class LoginServlet extends HttpServlet {
         System.out.println(isValidUSer);
 
         if(isValidUSer) {
-
-
-            System.out.println("logado com sucesso");
+            req.setAttribute("message", "Logado com Sucesso!");
 
             req.getRequestDispatcher("index.jsp").forward(req, resp);
         }
-        else
-        {
-            System.out.println("credenciais invalidas");
+        else {
+            req.setAttribute("message", "Credenciais Inválidas!");
 
-            req.setAttribute("message", "Invalid credentials!");
-
-            req.getRequestDispatcher("index.jsp").forward(req, resp);
+            req.getRequestDispatcher("LoginPage/login.jsp").forward(req, resp);
 
         }
     }
