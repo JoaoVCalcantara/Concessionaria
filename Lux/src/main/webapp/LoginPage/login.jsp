@@ -7,7 +7,6 @@
 
     <link rel="stylesheet" href="/LoginPage/Estilo.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel='stylesheet'>
-    
 </head>
 <body>
     <section class="container forms">
@@ -31,7 +30,7 @@
                     </div>
                 </form>
                 <div class="form-link">
-                    <span>Já Possui uma conta ?<a href="#" class="link signup-link"> Crie uma conta</a> </span>
+                    <span>Possui uma conta ?<a href="#" class="link signup-link">Crie uma conta</a> </span>
                 </div>
             </div>
                 <div class="line"></div>
@@ -48,8 +47,6 @@
                     </a>
                 </div>
             </div>
-        </div>
-        <!-- FORM DE CADASTRO -->
         <div class="form signup">
             <div class="form-content">
                 <header>Cadastro</header>
@@ -85,9 +82,7 @@
                         <span>Logue com o Google</span>
                     </a>
                 </div>
-
             </div>
-        </div>
     </section>
 <script src="script.js"></script>
 </body>
