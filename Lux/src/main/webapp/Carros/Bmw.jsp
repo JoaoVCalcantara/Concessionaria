@@ -93,7 +93,7 @@
             <h3>Velocidade Maxima: ${car.speed}</h3>
             <h3>Valvulas: ${car.val}</h3>
             <div class="car-img">
-                <img src="https://images3.alphacoders.com/116/1162574.jpg" alt="">
+                <img src= "https://images8.alphacoders.com/482/482831.jpg" alt="">
             </div>
         </div>
         <div class="toast">
@@ -148,6 +148,5 @@
 </div>
 <script src="Carros/script.js"></script>
 </body>
-
 
 </html>
