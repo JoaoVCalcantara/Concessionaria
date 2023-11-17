@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Carros.css" />
+    <link rel="stylesheet" href="Carros/Carros.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
@@ -19,9 +19,8 @@
         <div class="links">
             <ul class="nav-itens">
                 <li><a href="../index.jsp">Home</a></li>
-                <li><a href="../História/historia.html">Sobre</a></li>
-                <li><a href="../Modelos/ofertas.html">Veiculos</a></li>
-                <li><a href="#">Suporte</a></li>
+                <li><a href="/Historia/historia.jsp">Sobre</a></li>
+                <li><a href="/find-all-cars">Veiculos</a></li>
             </ul>
         </div>
         <div class="right-icons">
@@ -73,24 +72,35 @@
             </div>
         </div>
         <div class="my-div">
-            <h2>Informações do Carro</h2>
+            <h2>Informacoes do Carro</h2>
             <div class="car">
-                <h3>Motor: Dois Motores Elétricos</h3>
-                <h3>Potência: 605 cv</h3>
-                <h3>Portas: 4</h3>
-                <h3>Autonomia: 651 Km</h3>
-                <h3>Torque: 92,48 kgfm</h3>
-                <h3>Lugares: 5</h3>
-                <h3>Aceleração: 3,1s</h3>
-                <h3>Velocidade Máxima: 250 Km/h</h3>
-                <h3>Tração: AWD</h3>
+                <h3>Motor: ${car.motor}</h3>
+                <h3>Potencia: ${car.hp}</h3>
+                <h3>Portas: ${car.doors}</h3>
+                <h3>Autonomia: ${car.cil}</h3>
+                <h3>Torque: ${car.torque}</h3>
+                <h3>Lugares: ${car.seats}</h3>
+                <h3>Aceleracao: ${car.acel}</h3>
+                <h3>Velocidade Maxima: ${car.speed}</h3>
+                <h3>Tracao: ${car.val}</h3>
                 <div class="car-img">
                     <img src="https://f.i.uol.com.br/fotografia/2019/10/11/15708360035da10e23c87c2_1570836003_3x2_rt.jpg"
                         alt="Porsche Taycan Turbo S">
                 </div>
             </div>
-            <button class="btn2"><a href="#">Valor do Aluguel: 
-                R$5000,00</button></a>
+            <div class="toast">
+                <div class="toast-content">
+                    <i class="fas fa-solid fa-check check"></i>
+                    <div class="message">
+                        <span class="text text-1">Parabens!!</span>
+                        <span class="text text-2">Carro Alugado com sucesso, entraremos em contato via e-mail dentro dos
+                            proximos dias.</span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-xmark close"></i>
+                <div class="progress active"></div>
+            </div>
+            <button onclick="showToast()">Alugar por R$${car.price}</button>
         </div>
     </div>
     <footer>
@@ -100,10 +110,10 @@
                     <li><a class="link1" href="../index.jsp">Home</a></li>
                 </div>
                 <div class="info2">
-                    <li><a class="link1" href="../Modelos/ofertas.html">Veiculos</a></li>
+                    <li><a class="link1" href="/find-all-cars">Veiculos</a></li>
                 </div>
                 <div class="info3">
-                    <li><a class="link1" href="../História/historia.html">Sobre</a></li>
+                    <li><a class="link1" href="/Historia/historia.jsp">Sobre</a></li>
                 </div>
             </section>
             <hr class="divisao">
@@ -128,5 +138,5 @@
     </footer>
     </div>
 </body>
-
+<script src="Carros/script.js"></script>
 </html>
