@@ -1,16 +1,4 @@
-package br.com.lux.model;
-
-public class User {
-
-    private String username, password;
-
-    public User(String name, String password) {
-        this.username = name;
-        this.password = password;
-    }
-
-    public String getUsername() {
-        return username;package br.com.lux.filter;
+package br.com.lux.filter;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
@@ -45,8 +33,6 @@ public class AutenticationFilter implements Filter {
         return httpServletRequest.getSession().getAttribute("LoggedUser") != null;
     }
 }
-    }
-    public String getPassword() {
-        return password;
-    }
-}
+
+
+
