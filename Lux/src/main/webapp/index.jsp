@@ -20,7 +20,7 @@
             <ul class="nav-itens">
                 <li><a href="index.jsp">Home</a></li>
                 <li><a href="./Historia/historia.jsp">Sobre</a></li>
-                <li><a href="./Modelos/ofertas.jsp">Veiculos</a></li>
+                <li><a href="/find-all-cars">Veiculos</a></li>
             </ul>
         </div>
         <div class="right-icons">
