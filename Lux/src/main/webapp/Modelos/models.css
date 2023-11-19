@@ -235,17 +235,24 @@ footer {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     padding-top: 10px;
     height: auto;
     align-items: start;
     justify-content: center;
+    margin: auto;
+    width: 90vw;
 }
-
-.article-card {
-    width: 40vw;
-    height: 100%;
+.article-card, .article-card button {
+    background: none;
+    border: none;
+    padding: 0;
+    width: 45vw;
+    height: 95vh;
+    object-fit: cover;
+    justify-content: center;
+    object-position: center;
     border-radius: 12px;
     overflow: hidden;
     position: relative;

@@ -22,7 +22,7 @@
     <div class="links">
       <ul class="nav-itens">
         <li><a href="../index.jsp">Home</a></li>
-        <li><a href="../História/historia.html">Sobre</a></li>
+        <li><a href="/Historia/historia.jsp">Sobre</a></li>
         <li><a href="#">Veiculos</a></li>
       </ul>
     </div>
@@ -30,16 +30,6 @@
       <div class="btn">
         <a href="../LoginPage/login.jsp" class="field profile">
           <i class="bx bx-user-circle profile-icon"></i>
-        </a>
-      </div>
-      <div class="btn">
-        <a href="#" class="field globe">
-          <i class="bx bx-globe globe-icon"></i>
-        </a>
-      </div>
-      <div class="btn">
-        <a href="#" class="field settings">
-          <i class="bx bx-cog settings-icon"></i>
         </a>
       </div>
     </div>
@@ -52,19 +42,20 @@
 
   <h2 class="models">Modelos</h2>
 
-    <div class="container">
-      <c:forEach var="car" items="${cars}">
-        <div class="article-card">
+  <div class="container">
+    <c:forEach var="car" items="${sessionScope.cars}">
+      <form action="/detalhes-carro" method="get">
+        <button type="submit" class="article-card">
           <div class="content">
-            <p class="date"><a href="../Carros/${car.name}" class="click">${car.name}</p>
+            <input type="hidden" id="id" name="id" value="${car.id}">
+            <p class="date" class="click">${car.name}</p>
             <p class="title">${car.title}</p>
           </div>
-          <img
-            src="${car.link}"
-            alt="${car.name}" class="card-image zoomable"/></a>
-        </div>
-      </c:forEach>
-    </div>
+          <img src="${pageContext.request.contextPath}/img/${car.image}" alt="${car.name}" class="card-image zoomable"/>
+        </button>
+      </form>
+    </c:forEach>
+  </div>
 
   <footer>
     <div class="secoes">
@@ -76,7 +67,7 @@
           <li><a class="link1" href="#">Veiculos</a></li>
         </div>
         <div class="info3">
-          <li><a class="link1" href="/Historia/historia.html">Sobre</a></li>
+          <li><a class="link1" href="/Historia/historia.jsp">Sobre</a></li>
         </div>
       </section>
       <hr class="divisao">
@@ -102,5 +93,4 @@
   </div>
   <script src="script.js"></script>
 </body>
-
 </html>

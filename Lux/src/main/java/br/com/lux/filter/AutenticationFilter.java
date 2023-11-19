@@ -22,7 +22,7 @@ public class AutenticationFilter implements Filter {
             chain.doFilter(servletRequest, response);
 
         } else {
-            servletRequest.setAttribute("message", "Usuário não autenticado");
+            servletRequest.setAttribute("message", "Usuário Não Autenticado");
             servletRequest.getRequestDispatcher("/login.jsp").forward(httpServletRequest, response);
         }
     }
