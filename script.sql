@@ -24,7 +24,3 @@ VALUES
 (4, 'Bmw I8', 'Intercooled Turbo Gas/Electric I-3','600 km', '4,4s', '369 cv', '42 kgfm', '250 Km/h', '2', '4', '12', '7,899', 'https://www.hdcarwallpapers.com/walls/2018_bmw_i8_coupe_4k-HD.jpg', 'Um toque de luxuosidade e desempenho', 'Bmw.jsp'),
 (5, 'BYD Yuan', 'Elétrico', '294 Km', '7,3s', '204 cv', '31,0 Kgfm', '160 Km/h', '4', '5', 'FWD', '3,599', 'https://static.wixstatic.com/media/0618bc_b976ea0445654fdb9bc1e5dfaeb55cb6~mv2.webp', 'Carro família e econômico', 'BYDYuan.jsp'),
 (6, 'BYD Tan', 'Elétrico', '306 Km', '4,6s', '272 cv', '69,3 Kgfm', '186 Km/h', '4', '7', 'AWD','6,200', 'https://static.wixstatic.com/media/0618bc_ddbb4d42444a4b74b2e84296718aa6e9~mv2.jpg/v1/fill/w_1864,h_1065,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/0618bc_ddbb4d42444a4b74b2e84296718aa6e9~mv2.jpg', 'O SUV elétrico para a família toda', 'BYDTan.jsp');
-
-# Imagens
-
-
