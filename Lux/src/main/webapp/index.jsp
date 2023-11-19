@@ -34,9 +34,11 @@
 
     <section class="carros">
         <div class="carro1">
+            <div class ="conteiner">
             <img src="https://cas.volvocars.com/image/dynamic/MY24_2317/256/exterior-v3/H8/74000/RC0000/R187/TC05/_/2G03/TJ04/TP02/_/_/GR03/T101/NP03/TM02/_/CB03/EV02/JB0C/T214/LF01/_/VP07/UF02/FH02/_/_/_/TR06/_/default.jpg?market=br&client=gox-graph%7Cpdps&angle=4&w=1920&bg=descriptive-studio"
                 alt="Volvo XC-90">
-            <button class="botao-imagem"><a href="/find-all-cars">Confira nossas ofertas</button></a>
+            <button class="botao-imagem"><a href="/find-all-cars">Confira nossas ofertas</a></button>
+            </div>
         </div>
         <div class="carro2">
             <img src="https://images6.alphacoders.com/129/1290771.jpg" alt="Audi E-Tron GT">
@@ -74,7 +76,7 @@
                 </ul>
             </section>
             <section class="creditos">
-                <p>© LUX</p>
+                <p>LUX</p>
             </section>
         </div>
     </footer>
