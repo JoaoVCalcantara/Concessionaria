@@ -1,3 +1,21 @@
+CREATE TABLE Car (
+    id int auto_increment,
+    name varchar(255),
+    motor varchar(255),
+    cil varchar(255),
+    acel varchar(255),
+    hp varchar(255),
+    torque varchar(255),
+    velmax varchar(255),
+    doors varchar(255),
+    seats varchar(255),
+    val varchar(255),
+    price varchar(255),
+    image varchar(255),
+    title varchar(255),
+    page varchar(255)
+);
+
 INSERT INTO car (id, name, motor, cil, acel, hp, torque, velmax, doors, seats, val, price, coverurl, title,page)
 VALUES
 (1, 'Tesla Model S', 'Dois Motores Elétricos','651 Km', '3,1s', '605 cv', '92,48 Kgfm', '250 Km/h', '4', '5', 'AWD', '5,299', 'https://wallpapercave.com/wp/wp3536110.jpg', 'Comforto e dirigibilidade com tecnológia', 'TeslaModelS.jsp'),
