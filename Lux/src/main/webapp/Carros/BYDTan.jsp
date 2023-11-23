@@ -29,16 +29,6 @@
                     <i class="bx bx-user-circle profile-icon"></i>
                 </a>
             </div>
-            <div class="btn">
-                <a href="#" class="field globe">
-                    <i class="bx bx-globe globe-icon"></i>
-                </a>
-            </div>
-            <div class="btn">
-                <a href="#" class="field settings">
-                    <i class="bx bx-cog settings-icon"></i>
-                </a>
-            </div>
         </div>
     </nav>
     <div class="wrapper">
