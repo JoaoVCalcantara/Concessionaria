@@ -139,4 +139,8 @@
         </div>
 </body>
 <script src="Carros/script.js"></script>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> backup2

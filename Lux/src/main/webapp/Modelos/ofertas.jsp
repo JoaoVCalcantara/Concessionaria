@@ -70,7 +70,10 @@
           <li><a class="link1" href="/Historia/historia.jsp">Sobre</a></li>
         </div>
       </section>
+<<<<<<< HEAD
 
+=======
+>>>>>>> backup2
       <hr class="divisao">
       <section class="contato">
         <ul class="redes-sociais">

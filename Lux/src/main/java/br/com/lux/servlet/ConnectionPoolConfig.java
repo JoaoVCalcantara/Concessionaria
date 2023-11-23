@@ -1,11 +1,21 @@
 package br.com.lux.servlet;
+<<<<<<< HEAD
 import org.apache.commons.dbcp2.BasicDataSource;
+=======
+
+import org.apache.commons.dbcp2.BasicDataSource;
+
+>>>>>>> backup2
 import java.sql.Connection;
 import java.sql.SQLException;
 
 public class ConnectionPoolConfig {
 
     private static BasicDataSource dataSource;
+<<<<<<< HEAD
+=======
+
+>>>>>>> backup2
     private ConnectionPoolConfig() {
         getDataSource();
     }
@@ -24,9 +34,19 @@ public class ConnectionPoolConfig {
             System.out.println("New connection pool created with successful");
 
         }
+<<<<<<< HEAD
         return dataSource;
     }
     public static Connection getConnection() throws SQLException {
+=======
+
+        return dataSource;
+
+    }
+
+    public static Connection getConnection() throws SQLException {
+
+>>>>>>> backup2
         return getDataSource().getConnection();
 
     }

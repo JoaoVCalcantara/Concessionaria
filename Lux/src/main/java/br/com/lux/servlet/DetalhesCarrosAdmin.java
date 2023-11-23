@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+<<<<<<< HEAD
 
     @WebServlet("/admin-detalhes-admin")
     public class DetalhesCarrosAdmin extends HttpServlet {
@@ -14,6 +15,12 @@ import java.io.IOException;
         @Override
         protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
             
+=======
+    @WebServlet("/admin-detalhes-admin")
+    public class DetalhesCarrosAdmin extends HttpServlet {
+        @Override
+        protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+>>>>>>> backup2
             String carId = req.getParameter("id");
             Car car = new CarDao().findCarById(carId).get(0);
             req.setAttribute("car", car);
