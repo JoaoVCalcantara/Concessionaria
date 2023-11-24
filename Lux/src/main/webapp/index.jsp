@@ -19,11 +19,7 @@
         <div class="links">
             <ul class="nav-itens">
                 <li><a href="index.jsp">Home</a></li>
-<<<<<<< HEAD
                 <li><a href="./Historia/historia.jsp">Sobre</a></li>
-=======
-                <li><a href="/Historia/historia.jsp">Sobre</a></li>
->>>>>>> backup2
                 <li><a href="/find-all-cars">Veiculos</a></li>
             </ul>
         </div>
