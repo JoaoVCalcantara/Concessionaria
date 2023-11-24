@@ -27,10 +27,10 @@ VALUES
 
 CREATE TABLE USR (
     id int auto_increment,
-    name varchar(255),
+    username varchar(255),
     password varchar(255)
 );
 
-INSERT INTO USR (id, name, password)
+INSERT INTO USR (id, username, password)
 VALUES 
 (1, 'admin', '123');
