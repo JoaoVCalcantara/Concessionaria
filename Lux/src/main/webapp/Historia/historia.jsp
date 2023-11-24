@@ -40,9 +40,8 @@
     </div>
 
     <div class="texto">
-        <h3 class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ratione expedita aspernatur
-            laudantium quibusdam, odit suscipit, ab alias, quod dolore laboriosam veritatis voluptatum quam tempora fuga
-            maxime deleniti exercitationem! Ea. Segue abaixo as regiões em que estamos presente </h3>
+        <h3 class="text">A Lux surgiu como uma ideia de inovação entre 6 amigos, trouxemos a possibilidade de poder alugar carros eletricos algo que até o momento não existia este mercado no Brasil. 
+            Hoje somos a principal referência. Estamos presentes em diversos estados do país, com a projeção de alcançarmos todo território nacional. </h3>
     </div>
 
     <div class="model">
