@@ -31,6 +31,6 @@ CREATE TABLE USR (
     password varchar(255)
 );
 
-INSERT INTO USR (id, username, password, telefone, email)
+INSERT INTO USR (id, username, password, email, firstName, lastName)
 VALUES 
 (1, 'admin', '123', '11970928922', 'josezikinha123@gmail.com');
