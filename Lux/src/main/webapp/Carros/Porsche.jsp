@@ -136,7 +136,6 @@
             </section>
         </div>
     </footer>
-    </div>
 </body>
 <script src="Carros/script.js"></script>
 </html>

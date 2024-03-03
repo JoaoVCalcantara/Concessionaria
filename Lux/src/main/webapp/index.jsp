@@ -25,7 +25,7 @@
         </div>
         <div class="right-icons">
             <div class="btn">
-                <a href="LoginPage/login.jsp" class="field profile">
+                <a href="/login" class="field profile">
                     <i class='bx bx-user-circle profile-icon'></i>
                 </a>
             </div>

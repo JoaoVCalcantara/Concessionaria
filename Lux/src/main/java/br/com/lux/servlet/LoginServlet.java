@@ -15,22 +15,24 @@ public class LoginServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+
+        req.getSession().setAttribute("clickUser", "login");
+
         req.getRequestDispatcher("LoginPage/login.jsp").forward(req, resp);
 
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        req.getRequestDispatcher("LoginPage/login.jsp").forward(req, resp);
 
-        String username = req.getParameter("username");
+        String username = req.getParameter("email");
         String password = req.getParameter("password");
 
 
 
-        User user = new User(username, password);
+        User user = new User(username, password, "", "", "");
 
-        boolean isValidUSer = new UserDao().verifyCredentials(user);
+        boolean isValidUSer = new UserDao().verifyCredentials(String.valueOf(user));
 
 
         System.out.println(isValidUSer);

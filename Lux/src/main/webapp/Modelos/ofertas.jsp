@@ -5,7 +5,7 @@
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="Modelos/models.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,10 +70,7 @@
           <li><a class="link1" href="/Historia/historia.jsp">Sobre</a></li>
         </div>
       </section>
-<<<<<<< HEAD
 
-=======
->>>>>>> backup2
       <hr class="divisao">
       <section class="contato">
         <ul class="redes-sociais">
@@ -94,7 +91,6 @@
       </section>
     </div>
   </footer>
-  </div>
   <script src="script.js"></script>
 </body>
 </html>

@@ -484,8 +484,6 @@ footer {
   
   .toast.active ~ button {
     pointer-events: none;
-<<<<<<< HEAD
+
   }
-=======
-  }
->>>>>>> backup2
+
